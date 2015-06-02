@@ -10,3 +10,4 @@ Then /^the screen should match "([^\"]*)"$/ do |template|
   max_attempts = 10
   expect(screenshotter.attempt_verify(max_attempts)).to eq(true)
 end
+
