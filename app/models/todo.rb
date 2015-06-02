@@ -1,0 +1,3 @@
+class Todo < CDQManagedObject
+
+end

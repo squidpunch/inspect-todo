@@ -1,5 +1,11 @@
 schema "0001 initial" do
 
+  entity "Todo" do
+    string :body
+    integer32 :priority
+    integer32 :status
+  end
+
   # Examples:
   #
   # entity "Person" do
