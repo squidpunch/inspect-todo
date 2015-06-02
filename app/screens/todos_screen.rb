@@ -9,8 +9,12 @@ class TodosScreen < PM::TableScreen
   def table_data
     [{
       cells:
-      Todo.collect { |t| { title: t.body } }
+      Todo.all.collect { |t| { title: t.body } }
     }]
+  end
+
+  def view_will_appear(animated)
+    update_table_data
   end
 
   def add_todo

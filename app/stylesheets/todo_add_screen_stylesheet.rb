@@ -10,6 +10,7 @@ class TodoAddScreenStylesheet < ApplicationStylesheet
 
     st.view.placeholder = "What do you need todo?"
     st.view.contentVerticalAlignment = UIControlContentVerticalAlignmentFill
+    st.accessibility_label = "What do you need todo?"
   end
 
   def save(st)
